@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,7 +16,8 @@ import { LoginRoutingModule } from './components/login/login-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
